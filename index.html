@@ -1,75 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sandeep Waghmare | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandeep | High UI/UX Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
-<body>
+<body data-scroll-container>
+  <nav class="navbar">
+    <div class="nav-logo">Sandeep</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="resume.pdf.pdf" download>Resume</a></li>
+    </ul>
+    <button id="themeToggle">🌙</button>
+  </nav>
 
-  <header>
-    <h1>Sandeep Waghmare</h1>
-    <p>Msc Computer Science | Python Developer</p>
-    <div class="contact">
-      <p>📍 Latur, Maharashtra</p>
-      <p>📧 smwaghmare25@email.com</p>
-      <p>📞 +91-9579132125</p>
-      <p>
-        <a href="https://www.linkedin.com/in/sandip-waghmare-bb06a1247" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/sandipwaghmare144" target="_blank">GitHub</a>
-      </p>
+  <section class="hero" data-scroll-section>
+    <div class="hero-left">
+      <h1 data-aos="fade-right">Hi, I'm <span>Sandeep Waghmare</span></h1>
+      <p data-aos="fade-right" data-aos-delay="100">Software Engineer | Python | Web | IoT | Machine Learning</p>
+      <a href="resume.pdf" class="btn glass" download data-aos="fade-up" data-aos-delay="200">Download Resume</a>
     </div>
-  </header>
-
-  <section>
-    <h2>🎯 Career Objective</h2>
-    <p>Motivated Computer Science postgraduate student aspiring to join as a Software Engineer. 
-    Equipped with strong programming skills in Python and foundational knowledge in IoT, Machine Learning, 
-    and Data Analytics. Eager to apply technical expertise and a positive attitude in a collaborative and innovative work environment.</p>
+    <div class="hero-right" data-aos="zoom-in">
+      <img src="assets/sandeep.jpg.jpg" alt="Sandeep" class="profile-img" />
+    </div>
   </section>
 
-  <section>
-    <h2>🎓 Education</h2>
-    <ul>
-      <li><strong>Master of Computer Science</strong>, Rajarshi Shahu Mahavidyalaya, Latur (2025) – 73.21%</li>
-      <li><strong>Bachelor of Computer Science</strong>, Mahatma Basweshwar Mahavidyalaya, Latur (2023) – 74.17%</li>
-    </ul>
+  <section id="about" class="section" data-scroll-section>
+    <div class="container" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>I am a Computer Science postgraduate passionate about real-world software solutions, IoT, and data analytics. I enjoy solving problems and designing clean, efficient systems.I'm Sandeep Waghmare, a passionate Computer Science postgraduate from Rajarshi Shahu Mahavidyalaya, Latur, with a strong foundation in Python, IoT, Machine Learning, and Data Analytics. I thrive on turning ideas into innovative solutions, whether it's building real-time Air Quality Monitoring Systems using IoT sensors and Python or tackling complex data challenges with analytical precision.
+My journey in tech is driven by curiosity and a commitment to continuous learning. From developing IoT applications on Raspberry Pi to mastering data structures and algorithms, I enjoy exploring the intersections of technology and real-world impact. I’m proficient in tools like VS Code, IntelliJ IDEA, and Linux, and I bring a collaborative spirit to every project, honed through academic and hands-on experiences.
+When I’m not coding or tinkering with sensors, you’ll find me diving into tech blogs, solving LeetCode problems, or contributing to open-source projects. I’m excited to leverage my skills to create meaningful solutions and grow as a software developer. Let’s connect to build something amazing together!</p>
+    </div>
   </section>
 
-  <section>
-    <h2>🛠️ Technical Skills</h2>
-    <p><strong>Languages:</strong> Python, Kotlin</p>
-    <p><strong>Web:</strong> HTML5, CSS3</p>
-    <p><strong>Databases:</strong> MySQL, RDBMS</p>
-    <p><strong>Tools:</strong> VS Code, IntelliJ IDEA, Eclipse</p>
-    <p><strong>Others:</strong> OOPs, DSA, Linux</p>
-    <p><strong>Soft Skills:</strong> Problem Solving, Team Collaboration, Critical Thinking</p>
+  <section id="skills" class="section glass" data-scroll-section>
+    <div class="container" data-aos="fade-up">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span>Python</span><span>Kotlin</span><span>Machine Learning</span><span>HTML5</span><span>CSS3</span><span>MySQL</span><span>DSA</span><span>IoT</span><span>Linux</span>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>💡 Projects</h2>
-    <ul>
-      <li><strong>Air Quality Monitoring System</strong><br>
-        - Built a real-time monitoring system using IoT sensors.<br>
-        - Applied data analytics to detect trends and predictions.<br>
-        - Achieved high accuracy and scalable design with wide sensor coverage.
-      </li>
-    </ul>
+  <section id="projects" class="section" data-scroll-section>
+    <div class="container" data-aos="fade-up">
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Air Quality Monitoring System</h3>
+        <p>Real-time IoT system for tracking air pollution, using data analytics for prediction and reporting.🏆 Impact:
+
+-Enabled real-time monitoring of air pollution in local environments.
+
+-Promoted awareness of environmental health and safety.
+
+-Built a foundation for future smart city and sustainability projects</p>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>📜 Certifications</h2>
-    <ul>
-      <li>Programming in Python – IIT Bombay</li>
-      <li>IISRO AI/ML for Geo-data Analysis</li>
-      <li>TCS iON Career Edge – Young Professional</li>
-    </ul>
+  <section id="certificates" class="section glass" data-scroll-section>
+    <div class="container" data-aos="fade-up">
+      <h2>Certificates</h2>
+      <ul>
+        <li>Python Programming - IIT Bombay</li>
+        <li>ISRO AI/ML for Geo-data Analysis</li>
+        <li>TCS Career Edge - Young Professional</li>
+      </ul>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Sandeep Waghmare. All rights reserved.</p>
+  <section id="testimonials" class="section" data-scroll-section>
+    <div class="container" data-aos="fade-up">
+      <h2>Testimonials</h2>
+      <blockquote>"Sandeep is an excellent collaborator with strong technical and creative skills." – Kaka Pawar</blockquote>
+      <blockquote>"A passionate and committed developer – great to work with." – Mahesh Katambe</blockquote>
+    </div>
+  </section>
+
+  <section id="contact" class="section" data-scroll-section>
+    <div class="container" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer" data-scroll-section>
+    <p>&copy; 2025 Sandeep Waghmare</p>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
